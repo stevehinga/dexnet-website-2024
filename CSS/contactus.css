@@ -1,0 +1,518 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .contain{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,243,237,0.9780287114845938) 100%);  }
+  /*Navbar*/
+  .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 15px;
+  }
+  
+  .navbar img {
+    width: auto;
+    height: 2.7vw;
+    margin-left: 15vw;
+    margin-top: 2vw;
+  }
+  .hamburger-menu i{
+    display: none;
+  }
+  .close-menu i{
+    display: flex;
+    color: transparent;
+  }
+  .menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: 5vw;
+    margin-top: 2vw;
+  }
+  
+  .menu ul li {
+    margin-right: 1.4vw; 
+    position: relative; 
+  }
+  
+  .menu a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: rgb(4, 4, 56);
+    padding: 5px 15px; 
+  }
+  
+  .dropbtn {
+    color: #052753;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6496aa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #6496aa;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .content a {
+    text-align: center;
+    display: flex;
+  }
+  .about-header{
+    margin-left: 42vw;
+    margin-top: 2vw;
+  }
+  .about-header h2{
+    font-family: "Kaushan Script", cursive;
+    font-size: 3vw;
+    color: #031c3b;
+    margin-bottom: 5vw;
+  }
+/*Contact*/
+.contactus h2{
+  color: #031c3b;
+  font-size: 1rem;
+  margin-left: 44vw;
+  margin-top: -5vw;
+  text-transform: uppercase;
+}
+.contact-info{
+  margin-left: 15vw;
+  margin-top: 10vw;
+  margin-bottom: 3vw;
+}
+.message h3{
+  color: #031c3b;
+  line-height: 40px;
+  margin-top: -5vw;
+}
+.message p{
+  max-width: 30vw;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #031c3b;
+}
+.message li{
+  margin-top: 20px;
+  list-style: none;
+  line-height: 20px;
+}
+.message li i{
+  font-size: 18px;
+  color: #031c3b;
+}
+.message li p{
+  margin-top: -22px;
+  margin-left: 25px;
+}
+.message li p a{
+  text-decoration: none;
+  color: #031c3b;
+  font-size: 1vw;
+}
+.stroke{
+  border-left: 0.05px solid #03032c;
+  height: 230px;
+  margin-top: -27vw;
+  margin-bottom: 10vw;
+  margin-left: 50vw;
+}
+.contact-form{
+  margin-left: 43vw;
+  margin-top: -175px;
+}
+.contact-form form{
+  line-height: 50px;
+}
+.contact-form form input{
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid #031c3b;
+  color: #031c3b;
+  width: 50%;
+}
+.contact-form form input:focus{
+  color: #000000;
+  border-bottom: 1px solid #0ca195;
+}
+.contact-form form input::placeholder{
+  color: #031c3b;
+}
+.contact-form form h4{
+  color: #031c3b;
+  font-size: 12px;
+}
+.contact-form textarea{
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #031c3b;
+  width: 50%;
+}
+.contact-form textarea:focus{
+  border-bottom: 1px solid #0ca195;
+}
+.contact-form #mySubmit {
+  background-color: #031c3b;
+  color: #ffffff;
+  border-radius: 60px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.contact-form #mySubmit:hover{
+  background-color: #0ca195;
+  transition: 0.1s ease-in-out;
+}
+
+  /*footer*/
+.footer-container{
+    background-color: #031c3b;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+    padding: 50px;
+  }
+  .about a img{
+    height: 45px;
+    width: 150px;
+  }
+  .about p{
+    color: #ffffff;
+    font-size: 1vw;
+    margin-top: 15px;
+  }
+  .quicklink{
+    color: #ffffff;
+  }
+  .quicklink h3{
+    margin-bottom: 10px;
+    font-weight:bold ;
+  }
+  .quicklink li{
+    list-style: none;
+  }
+  .quicklink li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 1vw;
+    line-height: 28px;
+  }
+  .quicklink li a:hover{
+    color: #6496aa;
+  }
+  .contact h3{
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .info li{
+    list-style: none;
+    line-height: 25px;
+  }
+  .info li i{
+    color: white;
+  }
+  .info li p{
+    margin-top: -26px;
+    margin-left: 25px;
+  }
+  .info li p a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 1vw;
+  }
+  .info li p a:hover{
+    color: #0ca195;
+  }
+  .copyright p{
+    color: #ade9e4;
+    margin-top: -50px;
+    font-size: 1vw;
+  }
+
+/*Tablet View*/
+@media (max-width: 1200px){
+    /*Navbar*/
+      .navbar img{
+        width: auto;
+        height: 7vw;
+        margin-left: 5vw;
+        margin-top: 4vw;
+      }
+      .hamburger-menu i{
+        border: none;
+        display: flex;
+        color: #03032c;
+        font-size: 5vw;
+        margin-left: 52vw;
+        margin-top: 3vw;
+      }
+      
+      .menu{
+        display: none;
+      }
+      .menu.active{
+        display: block;
+      }
+      .menu ul{
+        display: block;
+        margin-left: -92vw;
+        margin-top: -5.8vw;
+        z-index: 1000;
+        position: fixed;
+        background-color: rgba(232, 243, 237, 0.986);
+        height: 100vh;
+        width: 110vw;
+    
+      }
+      .menu ul li{
+        margin-left: 2vw;
+        text-align: center;
+        
+      }
+      .menu a{
+        position: relative;
+        top: 40vw;
+        line-height: 80px;
+        font-size: 3vw;
+      }
+      .close-menu{
+        position: fixed;
+        z-index: 2000;
+        top: 60px;
+        right: 70px;
+        cursor: pointer;
+    }
+      .close-menu i{
+        color: #03032c;
+        font-size: 5vw;
+      }
+      .about-header{
+        margin-left: 33vw;
+        margin-top: 5vw;
+      }
+      .about-header h2{
+        font-size: 8vw;
+      }
+/*Contact*/
+.contactus h2{
+  font-size: 1.4rem;
+  margin-left: 40vw;
+}
+.contact-info{
+  margin-left: 10vw;
+}
+.message h3{
+  font-size: 3vw;
+}
+.message p{
+  font-size: 16px;
+  max-width: 40%;
+}
+.message li i{
+  font-size: 24px;
+}
+.message li p{
+  margin-left: 30px;
+  margin-top: -26px
+}
+.message li p a{
+  font-size: 2vw;
+}
+.stroke{
+  margin-left: 52vw;
+  margin-top: -55vw;
+  margin-bottom: 20vw;
+  height: 200px;
+}
+.contact-form{
+  margin-top: -28vw;
+  margin-left: 50vw;
+  margin-bottom: 15vw;
+}
+.contact-form form input{
+  width: 65%;
+}
+.contact-form form input::placeholder{
+  font-size: 1rem
+}
+.contact-form form h4{
+  font-size: 13px;
+}
+.contact-form textarea{
+  width: 65%;
+}
+.contact-form #mySubmit{
+  font-size: 20px;
+}
+/*footer*/
+  .about a img{
+    height: 60px;
+    width: 200px; 
+  }
+  .about p{
+    font-size: 2vw;
+    margin-top: 5px;
+  }
+  .quicklink li a{
+    font-size: 1.8vw;
+  }
+  .contact h3{
+    margin-left: 20px;
+  }
+  .info li{
+    margin-left: 20px;
+  }
+  .info li p a{
+    font-size: 1.8vw;
+  }
+  .copyright p{
+    margin-top: -140px;
+  }
+    }
+
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 600px){
+/*Navbar*/
+    .navbar img {
+      width: auto;
+      height: 9.5vw;
+      margin-left: 1vw;
+      }
+      .hamburger-menu i{
+        margin-left: 45vw;
+      }
+      .menu{
+        display: none;
+      }
+      .menu ul{
+        margin-left: -95vw;
+        margin-top: -20vw;
+        height: 110vh;
+      }
+      .menu ul li{
+        margin-top: 10vw;
+      }
+      .menu a{
+        font-size: 5vw;
+      }
+/*contact*/
+.contactus h2{
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-left: 35vw;
+}
+.message h3{
+  font-size: 5vw;
+  margin-top: 5vw;
+}
+.message p{
+  max-width: 78vw;
+}
+.message li i{
+  font-size: 23px;
+  color: #052753;
+}
+.message li p{
+  margin-left: 10vw;
+  margin-top: -6.5vw;
+}
+.message li p a{
+  font-size: 1rem;
+}
+.stroke{
+  display: none;
+}
+.contact-form{
+  margin-left: 0.5vw;
+  margin-top: 13vw;
+  margin-bottom: 15vw;
+}
+.contact-form form input{
+  width: 65%;
+}
+.contact-form textarea{
+  width: 65%;
+}
+.contact-form #mySubmit{
+  font-size: 18px;
+}
+/*Footer Section*/
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+  .about a img{
+    height: auto;
+    width: 210px;
+    margin-left: -20px;
+    margin-top: -5px;
+  }
+  .about p{
+    font-size: 2.7vw;
+    margin-left: -20px;
+    margin-top: 10px;
+  }
+  .quicklink{
+    margin-left: -20px;
+  }
+  .quicklink li a{
+    font-size: 3.3vw;
+  }
+  .contact h3{
+    margin-left: -20px;
+  }
+  .info li{
+    margin-left: -20px;
+  }
+  .info li p a{
+    font-size: 2.8vw;
+  }
+  .copyright p{
+    margin-top: -2px;
+    font-size: 3vw;
+  }
+    }

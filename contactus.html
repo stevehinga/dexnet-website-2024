@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMGS/Dexnet Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/contactus.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evSX huddledayAHTXwZhQLxoa1HcTVzcsNmF28DJuCAm TwpDvwlq7ONuGOi4n3iqsN3szcL-GkEY1qbUnw81tT0i4baoEjQnE0mRCSjxONsG2L1RD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dexnet Networks</title>
+</head>
+<body>
+    
+<!--Header(Navbar)Section-->
+<div class="contain" id="Home">
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="IMGS/Dexnet logo.png" alt="Logo"></a>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars fa-xs"></i>
+            </div>
+            <div class="menu">
+            <ul>
+                <li><a href="index.html#Home" class="active">Home</a></li>
+                <li><a href="about us.html">Who We Are</a></li>
+                <li><a href="index.html#Services" class="dropbtn">What We Do</a></li>
+                <li><a href="index.html#Packages">Our Packages</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <div class="close-menu">
+                <i class="fas fa-xmark"></i>
+            </div>
+        </div>
+        </nav>
+    </div>
+    <div class="about-header">
+        <h2>Contact Us</h2>
+        </div>
+<!--Contact us-->
+<div class="contactus">
+    <h2>Get In Touch</h2>
+    <div class="contact-info">
+        <div class="message">
+            <h3>Send Us a Message <i class="fa-solid fa-comments"></i></h3>
+            <p>Have a question, need support, or want to learn more about our services?
+             We're here to help! Contact us using the contact information below or reach through the contact form.</p>
+             <ul>
+                <li>
+                    <span><i class="fa-solid fa-phone fa-shake"></i></span>
+                    <p><a href="tel:+254737227327">+254 737 227327</a></p>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <p><a href="mailto:dexnetnetworks@gmail.com">dexnetnetworks@gmail.com</a></p>
+                </li>
+            </ul>
+            <div class="contact-form">
+                <form id="myForm" action="contact.php" method="post">
+                    <input type="text" name="fullname" id="fullName" placeholder="Full Name" required><br>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required><br>
+                    <input type="text" name="mobile" id="mobile" placeholder="Mobile Number" required><br>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required><br>
+                    <h4>Type Your Message Here...</h4>
+                    <textarea id="myMessage" name="message" required></textarea><br>
+                    <button type="button" id="mySubmit" value="Send">Send</button>
+                    <p id="message"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="stroke"></div>
+</div>
+<!--Footer Section-->
+<footer>
+    <div class="footer-container">
+        <div class="about">
+            <a href=""><img src="IMGS/Dexnet White logo.png" alt="Logo"></a>
+            <p>We're dedicated to helping our clients achieve their <br> goals by offering innovative and reliable solutions.</p>
+        </div>
+        <div class="quicklink">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="index.html#Home">Home</a></li>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="index.html#Packages">Our Packages</a></li>
+            </ul>
+        </div>
+        <div class="quicklink">
+            <h3>What We Do</h3>
+            <ul>
+                <li><a href="index.html#Services">Networking</a></li>
+                <li><a href="index.html#Services">Network Maintenance<br>& Consultation</a></li>
+                <li><a href="index.html#Services">CCTV & Solar<br>Power Backups</a></li>
+                <li><a href="index.html#Services">ICT Solutions</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <ul class="info">
+                <li>
+                    <span><i class="fa-solid fa-phone fa-shake"></i></span>
+                    <p><a href="tel:+254737227327">+254 737 227327</a></p>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <p><a href="mailto:dexnetnetworks@gmail.com">dexnetnetworks@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+    <p>&#169; 2024 Dexnet Networks.All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!--Javascript Links-->
+<script src="Js/navbar.js"></script>
+<script src="Js/sendform.js"></script>
+</body>
+</html>
