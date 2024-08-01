@@ -15,8 +15,7 @@ function sendForm() {
     }
     return response.text();
   })
-  .then(data   
- => {
+  .then(data => {
     if (data === "Email sent successfully!") {
       messageElement.textContent = 'Your message has been sent!';
       // Optionally, redirect or show a success message
