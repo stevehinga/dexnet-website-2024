@@ -9,17 +9,23 @@ function sendForm() {
     method: 'POST',
     body: formData
   })
-  .then(response => response.text())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.text();
+  })
   .then(data => {
-    document.getElementById('message').textContent = data;
     if (data === "Email sent successfully!") {
-      window.location.reload();
+      messageElement.textContent = 'Your message has been sent!';
+
+    } else {
+      messageElement.textContent = 'An error occurred. Please try again later.';
+      console.error('Error:', data);
     }
   })
   .catch(error => {
     console.error('Error:', error);
-    document.getElementById('message').textContent = 'An error occurred';
+    messageElement.textContent = 'An error occurred';
   });
 }
-
-document.getElementById('mySubmit').addEventListener('click', sendForm);
